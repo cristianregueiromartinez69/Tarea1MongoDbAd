@@ -1,7 +1,5 @@
 package service;
 
-import com.fasterxml.jackson.core.exc.StreamReadException;
-import com.fasterxml.jackson.databind.DatabindException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;
@@ -11,23 +9,15 @@ import java.util.Map;
 
 public class LecturaJsonColecciones {
 
-    public List<Map<String, Object>> readValuePokemonsJson(){
+    public List<Map<String, Object>> readValueObjectsJson(String path){
         ObjectMapper mapper = new ObjectMapper();
         try{
-            return mapper.readValue(new File("pokemons.json"), mapper.getTypeFactory().constructCollectionType(List.class, Map.class));
+            return mapper.readValue(new File(path), mapper.getTypeFactory().constructCollectionType(List.class, Map.class));
         } catch (IOException e) {
-            System.out.println("Ups, error al leer el json de pokemnons");
+            System.out.println("Ups, error al leer el achivo json");
         }
         return null;
     }
 
-    public Object readValueAdestradores(){
-        ObjectMapper mapper = new ObjectMapper();
 
-        try{
-            return mapper.readValue(new File("adestradores.json"), Object.class);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
 }

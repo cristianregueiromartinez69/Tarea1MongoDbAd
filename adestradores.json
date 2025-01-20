@@ -1,8 +1,8 @@
-{
-  "adestradores": {
-    "_id": "64e9b89f2b8b1234",
+[
+  {
+    "_id": { "oid": "64e9b89f2b8b1234" },
     "nome": "ash mostaza",
     "idade": 10,
     "cidade": "pueblo paleta"
   }
-}
+]

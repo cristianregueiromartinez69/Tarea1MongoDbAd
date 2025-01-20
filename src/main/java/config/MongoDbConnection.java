@@ -6,7 +6,7 @@ import com.mongodb.client.MongoDatabase;
 
 public class MongoDbConnection {
 
-    private static final String connectionMongoDb = "mongodb://localhost:27017";
+    private static final String connectionMongoDb = "mongodb+srv://mongo:mongo@proyectoad.xgtsf.mongodb.net/?retryWrites=true&w=majority&appName=ProyectoAD";
     private static final String databaseName = "dbpokemons";
 
     public static MongoDatabase getConnectionMongoDB(){
