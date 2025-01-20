@@ -1,0 +1,9 @@
+{
+  "pokemons": {
+    "nome": "tinkaton",
+    "tipo": ["hada, " , "acero"],
+    "nivel": 100,
+    "habilidades": ["rompemoldes", "ritmo propio", "hurto"],
+    "id_adestrador": { "$oid": "64e9b89f2b8b1234" }
+  }
+}
