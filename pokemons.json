@@ -5,5 +5,19 @@
     "nivel": 100,
     "habilidades": ["rompemoldes", "ritmo propio", "hurto"],
     "id_adestrador": { "oid": "64e9b89f2b8b1234" }
+  },
+  {
+    "nome": "pikachu",
+    "tipo": ["electrico"],
+    "nivel": 50,
+    "habilidades": ["electricidad estática", "pararrayos"],
+    "id_adestrador": { "oid": "64e9b89f2b8b1234" }
+  },
+  {
+    "nome": "gengar",
+    "tipo": ["fantasma", "veneno"],
+    "nivel": 98,
+    "habilidades": ["levitación", "cuerpo maldito"],
+    "id_adestrador": { "oid": "64e9b89f2b8b1234" }
   }
 ]
